@@ -56,7 +56,7 @@ resource "null_resource" "ansible" {
     }
     inline = [
       "sudo labauto ansible",
-      "ansible-pull -i localhost, -U https://github.com/raghudevopsb88/wmp-ansible-v4.git main.yml -e env=${var.env} -e COMPONENT=${var.component}"
+      "ansible-pull -i localhost, -U https://github.com/varunaita/wmp-ansible-v4.git main.yml -e env=${var.env} -e COMPONENT=${var.component}"
     ]
   }
 }
